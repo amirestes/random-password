@@ -1,0 +1,38 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <main>
+            <h1>Generate a <br><span>random password</span></h1>
+            <p>Never use an insecure password again.</p>
+            <div>
+                <label for="characterInput">How many characters would you like your password to be?</label><input type="text" id="characterInput" placeholder="Enter number of characters here">
+            </div>
+            <div class="toggleDiv">
+                <input type="checkbox" class="toggle" id="toggleSpecial" name="special" value="checked" checked><label for="special">Special Characters</label>
+                <input type="checkbox" class="toggle" id="toggleNumber"  name="numbers" value="checked" checked><label for="numbers">Numbers</label>
+            </div>
+            <div>
+                <button onClick="generatePassword()">Generate   passwords</button>
+                <button onClick="reset()" id="reset">Reset</button>
+            </div>
+            <br>
+            <img src="img/Line 17.png" alt="Line">
+            <div class="containerPassword">
+                <div class="passwordDiv">
+                    <div class="password" id="password1-el"></div>
+                    <div class="password" id="password2-el"></div>
+                </div>
+                <div class="copy">
+                    <div class="copyPassword copyPasswordOne" >   
+                    </div>  
+                    <div class="copyPassword copyPasswordTwo" >   
+                    </div>  
+                </div>
+            </div>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>

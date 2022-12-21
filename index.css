@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    background-color: #1F2937;
+    color: #D5D4D8;
+    font-family: "Inter";
+    font-size: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 100px;
+}
+
+.passwordDiv {
+    display: flex;
+    flex-direction: row;
+}
+
+h1 {
+    color: white;
+    font-family: "Karla", sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+span {
+    color: #20B981;
+}
+
+button {
+    background: #10B981;
+    color: #fff;
+    width: 191px;
+    height: 42px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    margin-right: 5px;
+}
+
+#reset {
+    width: 100px;
+}
+
+.password {
+    width: 211px;
+    height: 39px;
+    background: #273549;
+    border-radius: 6px;
+    color: #55F991;
+    margin: 15px 15px 0 0;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 15px;
+    
+}
+
+input {
+    width: 296px;
+    height: 42px;
+    margin-bottom: 15px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.toggle {
+    -webkit-appearance: none;
+    position: relative;
+    width: 50px;
+    height: 30px;
+    border-radius: 25px;
+    background-color: #ccc;
+    transition: background .3s;
+    outline: none;
+    cursor: pointer;
+}
+
+.toggle::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    height: 1.25rem;
+    width: 1.25rem;
+    background-color: #fff;
+    transition: left .3s;
+}
+
+.toggle:checked {
+    background-color: #10B981;
+}
+
+.toggle:checked::after {
+    left: 70%;
+
+}
+
+.toggleDiv {
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+}
+
+label {
+    margin-right: 15px;
+}
+
+.containerPassword {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.copy {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    
+    padding: 5px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.copyPassword {
+    margin: 15px 30px 0 0;
+    
+}
