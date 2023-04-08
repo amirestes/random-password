@@ -123,7 +123,6 @@ const toggleSwitch = () => {
       passwordOneEl.textContent = randomPasswordOne.join(" ");
       passwordTwoEl.textContent = randomPasswordTwo.join(" ");
     }
-    //this works
   } else if (!toggleSpecial.checked) {
     //if special off and number is on
     for (let i = 0; i < characterInput.value; i++) {
@@ -142,9 +141,9 @@ const toggleSwitch = () => {
       randomPasswordTwo.push(lettersCharacters[randomIndexTwo]);
       passwordOneEl.textContent = randomPasswordOne.join(" ");
       passwordTwoEl.textContent = randomPasswordTwo.join(" ");
-    } //this works
+    }
   } else {
-    //if the special and number are toggled on THIS WORKS
+    //if the special and number are toggled
     for (let i = 0; i < characterInput.value; i++) {
       randomIndexOne = Math.floor(Math.random() * characters.length);
       randomIndexTwo = Math.floor(Math.random() * characters.length);
